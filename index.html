@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>index</title>
+    
+    <script>
+    
+    function randInt(low,high) {
+      return Math.floor(Math.random()*(high-low+1)+low);
+     }
+    
+    
+    function chooseAURL() {
+         var n = randInt(1,5);
+         var theSite = "";
+          if (n == 1) {
+              theSite = "statement.html";
+              }
+          else if (n == 2) {
+              theSite = "page3.html";
+              }
+        else if (n == 3) {
+            theSite = "page4.html";
+            }
+        else if (n == 4) {
+            theSite = "page5.html";
+            }
+        else if (n == 5) {
+            theSite = "page5.html";
+            }
+        return theSite;
+     }
+    
+    
+    
+    
+    </script>
+<style>
+
+   body {
+	background-color: #cccccc;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-size: medium;
+	color: #000000;
+	
+   }
+
+   a:link {color: #0000FF;}
+   a:visited {color: #990099;}
+   a:focus {color: #66CCFF;}
+   a:hover {color: #66CCFF;}
+   a:active {color: #FF0000;}
+
+
+</style>
+
+</head>
+
+<body>
+
+<a href="#" onclick="window.location=chooseAURL(); return false;">PLAY!</a>
+
+
+
+</body>
+</html>
+
+
+
